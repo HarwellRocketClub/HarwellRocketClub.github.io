@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dual Deployment
-categories: [project]
+category: project
 ---
 
 Attempting a drogue and higher altitudes. Electronics bays...

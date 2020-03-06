@@ -1,0 +1,13 @@
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    {% for post in site.posts %}
+    {% if post.category == "team" %}
+    {% unless post.tags contains "noshow" %}
+    <div style="display: inline-block;">
+        <a href="{{ post.url }}">
+            <img src="{{ post.tags[0] | absolute_url }}" alt="{{ post.title }}">
+        </a>
+    </div>
+    {% endunless %}
+    {% endif %}
+    {% endfor %}
+</div>

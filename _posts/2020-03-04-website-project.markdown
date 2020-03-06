@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website
-categories: [project]
+category: project
 ---
 
 A website for out team

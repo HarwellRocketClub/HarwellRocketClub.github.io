@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Team 2 - First Rocket
-categories: [project]
+category: project
 ---
 
 A kit build to form a new team!
