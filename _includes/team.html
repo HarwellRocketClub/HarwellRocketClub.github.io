@@ -48,7 +48,7 @@
 <div class="teamPhotos">
     {% for post in site.categories.team %}
         <div class="teamPhotosItem">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url | relative_url }}">
                 {% if post.tags[0] == "no_image" %}
                     <img src="{{ site.default_team_image | relative_url }}" alt="{{ post.title }}" class="image" />
                 {% else %}

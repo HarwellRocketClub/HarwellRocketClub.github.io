@@ -31,7 +31,7 @@
         <hr />
         <p>{{ post.excerpt }}</p>
         <div class="bottomOfPost">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url | relative_url }}">
                 <div class="readMore">
                     Read more
                 </div>
