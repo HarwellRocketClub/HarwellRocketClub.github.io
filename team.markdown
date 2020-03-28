@@ -4,4 +4,8 @@ title: The Team
 permalink: /team/
 ---
 
-{% include team.html %}
+{% include team_style.html %}
+{% for team in site.teams %}
+# {{ team }}
+    {% include team.html team=team %}
+{% endfor %}

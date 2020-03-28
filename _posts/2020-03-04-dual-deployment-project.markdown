@@ -3,6 +3,7 @@ layout: post
 title: Red Kite
 category: project
 tags: [team1, rocket, parachute]
+patch: logo.png
 excerpt_separator: <!-- more -->
 ---
 
@@ -11,3 +12,8 @@ After a successful first launch team 1 are pushing to learn new techniques so th
 <!-- more -->
 
 Attempting a drogue and higher altitudes. Electronics bays...
+
+### The Team
+
+{% include team_style.html %}
+{% include team.html team=page.title %}

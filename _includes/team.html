@@ -1,70 +1,19 @@
-<style>
-.teamPhotos {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center;
-}
-.teamPhotosItem {
-    position: relative;
-    display: inline-block;
-    flex-basis: 30%;
-    margin: 10px;
-    text-align: center;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-}
-.teamPhotosItem:hover .overlay {
-    opacity: 1;
-}
-.text {
-    position: absolute;
-    color: white;
-    font-size: 15px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.image {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-</style>
 
-<div class="teams">
-    {% for team in site.teams %}
-        <h2>{{ team }}</h2>
-        <div class="teamPhotos">
-            {% for member in site.categories.team %}
-                {% if member.categories contains team %}
-                    <div class="teamPhotosItem">
-                        <a href="{{ member.url | relative_url }}">
-                            {% if member.tags[0] == "no_image" %}
-                                <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
-                            {% else %}
-                                <img src="assets/img/{{ member.tags[0] }}" alt="{{ member.title }}" class="image" />
-                            {% endif %}
-                            <div class="overlay">
-                                <div class="text">{{ member.title }}</div>
-                            </div>
-                        </a>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    {% endfor %}
+<div class="teamPhotos">
+{% for member in site.categories.team %}
+{% if member.categories contains include.team -%}
+    <div class="teamPhotosItem">
+        <a href="{{ member.url | relative_url }}">
+        {%- if member.tags[0] == "no_image" -%}
+            <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
+        {% else %}
+            <img src="assets/img/{{ member.tags[0] }}" alt="{{ member.title }}" class="image" />
+        {% endif %}
+            <div class="overlay">
+                <div class="text">{{ member.title }}</div>
+            </div>
+        </a>
+    </div>
+{% endif -%}
+{% endfor %}
 </div>
