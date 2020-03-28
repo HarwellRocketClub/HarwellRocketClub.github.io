@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dominic Roberts - Parachute Man
-category: team
+categories: [team, "Red Kite"]
 tags: [no_image]
 ---
 

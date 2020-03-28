@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Will Furnell - Electronics
-category: team
+category: [team, "Red Kite"]
 tags: [no_image]
 ---
 

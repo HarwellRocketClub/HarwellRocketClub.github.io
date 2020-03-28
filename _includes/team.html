@@ -45,19 +45,26 @@
 }
 </style>
 
-<div class="teamPhotos">
-    {% for post in site.categories.team %}
-        <div class="teamPhotosItem">
-            <a href="{{ post.url | relative_url }}">
-                {% if post.tags[0] == "no_image" %}
-                    <img src="{{ site.default_team_image | relative_url }}" alt="{{ post.title }}" class="image" />
-                {% else %}
-                    <img src="assets/img/{{ post.tags[0] }}" alt="{{ post.title }}" class="image" />
+<div class="teams">
+    {% for team in site.teams %}
+        <h2>{{ team }}</h2>
+        <div class="teamPhotos">
+            {% for member in site.categories.team %}
+                {% if member.categories contains team %}
+                    <div class="teamPhotosItem">
+                        <a href="{{ member.url | relative_url }}">
+                            {% if member.tags[0] == "no_image" %}
+                                <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
+                            {% else %}
+                                <img src="assets/img/{{ member.tags[0] }}" alt="{{ member.title }}" class="image" />
+                            {% endif %}
+                            <div class="overlay">
+                                <div class="text">{{ member.title }}</div>
+                            </div>
+                        </a>
+                    </div>
                 {% endif %}
-                <div class="overlay">
-                    <div class="text">{{ post.title }}</div>
-                </div>
-            </a>
+            {% endfor %}
         </div>
     {% endfor %}
 </div>

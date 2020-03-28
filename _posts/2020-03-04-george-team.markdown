@@ -1,7 +1,7 @@
 ---
 layout: post
 title: George Kersey - Systems Engineer
-category: team
+category: [team, "Red Kite"]
 tags: [no_image]
 ---
 

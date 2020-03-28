@@ -1,7 +1,7 @@
 ---
 layout: post
 title: James King - Team 2, Website
-category: team
+categories: [team, "Team 2"]
 tags: [jamesking.jpg]
 ---
 

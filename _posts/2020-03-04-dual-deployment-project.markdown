@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dual Deployment
+title: Red Kite
 category: project
 tags: [team1, rocket, parachute]
 excerpt_separator: <!-- more -->

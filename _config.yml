@@ -22,7 +22,7 @@ title: Harwell Rocket Club
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   UK based amateur rocket group striving to design, build and launch high power rockets.
-baseurl: "/index" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HarwellRockets
 #github_username:  jekyll
@@ -37,6 +37,10 @@ defaults:
       path: "assets/img"
     values:
       image: true
+
+teams:
+  - "Red Kite"
+  - "Team 2"
 
 default_team_image: assets/img/blackarrow3.jpg
 

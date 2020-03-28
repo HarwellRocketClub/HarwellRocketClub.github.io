@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steve George - Astronaut Hopeful
-category: team
+category: [team, "Red Kite"]
 tags: [no_image]
 ---
 
