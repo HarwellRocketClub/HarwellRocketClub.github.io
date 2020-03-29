@@ -11,6 +11,13 @@
     margin: 5px;
     text-align: center;
 }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .image {
+        flex-basis: 80%;
+    }
+}
 </style>
 
 {% assign image_files = site.static_files | where: "image", true %}

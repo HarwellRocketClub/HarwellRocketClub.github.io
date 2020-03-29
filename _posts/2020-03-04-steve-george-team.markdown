@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Steve George - Astronaut Hopeful
-category: [team, "Red Kite"]
-tags: [no_image]
+category: team
+tags: [no_image, "Red Kite"]
 ---
 
 Apollo 18 here we come...

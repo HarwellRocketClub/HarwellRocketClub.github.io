@@ -9,4 +9,11 @@ permalink: /index
 
 UK based amateur rocket group striving to design, build and launch high power rockets.
 
+## Our story
+
+
+## Our vision
+
+## Gallery
+
 {% include gallery.html %}

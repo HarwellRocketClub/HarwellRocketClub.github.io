@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Team 2 - First Rocket
+title: Team 2
 category: project
 tags: [team2, rocket]
 excerpt_separator: <!-- more -->

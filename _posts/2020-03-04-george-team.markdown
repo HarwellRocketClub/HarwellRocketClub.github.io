@@ -1,8 +1,8 @@
 ---
 layout: post
 title: George Kersey - Systems Engineer
-category: [team, "Red Kite"]
-tags: [no_image]
+category: team
+tags: [no_image, "Red Kite"]
 ---
 
 Member of the first rocket launch team...

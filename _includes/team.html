@@ -1,7 +1,7 @@
 
 <div class="teamPhotos">
 {% for member in site.categories.team %}
-{% if member.categories contains include.team -%}
+{% if member.tags contains include.team -%}
     <div class="teamPhotosItem">
         <a href="{{ member.url | relative_url }}">
         {%- if member.tags[0] == "no_image" -%}

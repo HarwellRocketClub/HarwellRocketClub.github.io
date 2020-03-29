@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Will Furnell - Electronics
-category: [team, "Red Kite"]
-tags: [no_image]
+category: team 
+tags: [no_image, "Red Kite"]
 ---
 
 Building an electronics package for parachute deployment and telemetry.

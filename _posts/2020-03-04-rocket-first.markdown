@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The First Rocket
-category: project
+category: rocket
 tags: [team1, rocket]
 excerpt_separator: <!-- more -->
 ---
