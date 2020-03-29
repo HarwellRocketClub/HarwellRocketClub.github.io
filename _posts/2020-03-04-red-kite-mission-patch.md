@@ -12,7 +12,7 @@ We have a mission patch for the Red Kite I mission.
 
 The second rocket built by the team has been dubbed Red Kite I and thanks to Vicky Hall we now have an awesome mission patch.
 
-{% include image.html image='logo.png' alt='Red Kite I Mission Patch' %}
+![Red Kite I Mission Patch](logo.png)
 
 ### Linked projects:
 {% for project in site.categories.project %}
