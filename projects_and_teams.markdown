@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: Projects and Teams
 permalink: /projects_and_teams/
 ---
 
-See the projects we are undertaking in our various teams.
+# {{ page.title }}
 
 {% include projects_and_teams.html %}

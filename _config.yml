@@ -26,9 +26,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HarwellRockets
 #github_username:  jekyll
+logo: assets/img/club_logo.png
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
@@ -37,10 +38,6 @@ defaults:
       path: "assets/img"
     values:
       image: true
-
-teams:
-  - "Red Kite"
-  - "Team 2"
 
 default_team_image: assets/img/blackarrow3.jpg
 
