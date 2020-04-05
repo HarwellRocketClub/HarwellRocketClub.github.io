@@ -2,7 +2,7 @@
 layout: post
 title: Steve George - Astronaut Hopeful
 category: team
-tags: [no_image, "Red Kite"]
+teams: ["Project Management", "Red Kite"]
 ---
 
 Apollo 18 here we come...

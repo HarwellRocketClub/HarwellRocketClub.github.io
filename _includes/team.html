@@ -1,13 +1,13 @@
 
 <div class="teamPhotos">
 {% for member in site.categories.team %}
-{% if member.tags contains include.team -%}
+{% if member.teams contains include.team -%}
     <div class="teamPhotosItem">
         <a href="{{ member.url | relative_url }}">
-        {%- if member.tags[0] == "no_image" -%}
-            <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
+        {%- if member.image -%}
+            <img src="../team/assets/img/{{ member.image }}" alt="{{ member.title }}" class="image" />
         {% else %}
-            <img src="assets/img/{{ member.tags[0] }}" alt="{{ member.title }}" class="image" />
+            <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
         {% endif %}
             <div class="overlay">
                 <div class="text">{{ member.title }}</div>

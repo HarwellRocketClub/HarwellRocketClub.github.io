@@ -2,7 +2,7 @@
 layout: post
 title: Dominic Roberts - Parachute Man
 category: team
-tags: [no_image, "Red Kite"]
+teams: ["Red Kite"]
 ---
 
 Looking at drogue and main Parachute

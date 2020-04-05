@@ -1,0 +1,68 @@
+{% include team_style.html %}
+<style>
+.bottomOfPost {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.readMore {
+    position: absolute;
+    background-color: #008CBA;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1px;
+    left: 0;
+}
+.postDate {
+    position: absolute;
+    right: 0;
+}
+.postTopBar {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+.postTitle {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    margin-right: 10px;
+}
+.postPatch {
+    position: absolute;
+    right: 0;    
+    height: 100px;
+}
+.bottomPostSpacing {
+    margin-bottom: 100px;
+}
+</style>
+
+{% for project in site.categories.project %}
+<div class="postTopBar">
+    <div class="postTitle">
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+    </div>
+    <div class="postPatch">
+    {% if project.patch %}
+        <img src="../assets/img/{{ project.patch }}" alt="{{ project.title }} mission patch" class="image" />
+    {% else %}
+        <img src="../assets/img/club_log.png" alt="{{ project.title }} mission patch" class="image" />
+    {% endif %}
+    </div> 
+</div>
+<hr />
+<p>{{ project.excerpt }}</p>
+<div class="bottomOfPost">
+    <a href="{{ project.url }}">
+        <div class="readMore">
+            Read more
+        </div>
+    </a>
+    <p class="postDate">{{ project.date | date_to_long_string }}</p>
+</div>
+<h4 align="center">Meet The Team</h4>
+{% include team.html team=project.title %}
+<div class="bottomPostSpacing"></div>
+{% endfor %}
