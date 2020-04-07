@@ -39,10 +39,10 @@
 }
 </style>
 
-{% for project in site.categories.project %}
+{% for project in site.categories.research_and_development %}
 <div class="postTopBar">
     <div class="postTitle">
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
     </div>
     <div class="postPatch">
     {% if project.patch %}

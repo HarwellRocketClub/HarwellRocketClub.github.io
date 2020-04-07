@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Will Furnell - Electronics
+title: Will Furnell - Avionics
 category: team 
 teams: ["Red Kite"]
 ---

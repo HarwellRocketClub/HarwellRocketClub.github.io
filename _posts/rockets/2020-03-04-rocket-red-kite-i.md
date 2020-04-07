@@ -2,7 +2,6 @@
 layout: post
 title: Red Kite I
 category: rocket
-tags: [team1, rocket, "Red Kite"]
 excerpt_separator: <!-- more -->
 ---
 

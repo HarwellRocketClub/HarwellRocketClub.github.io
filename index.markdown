@@ -5,6 +5,7 @@
 layout: default
 title: Home
 permalink: /index
+order: 1
 ---
 
 UK based amateur rocket group striving to design, build and launch high power rockets.
