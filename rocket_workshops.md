@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: page
 title: Rocket Workshops
 permalink: /rocket_workshops
 order: 4
 ---
 
+![Rocket Launch]({{ 'assets/img/coming_soon.png' | relative_url }})
 
-### Meet The Outreach Team
-
-{% include team_style.html %}
-{% include team.html team="Outreach" %}
+## Coming Soon

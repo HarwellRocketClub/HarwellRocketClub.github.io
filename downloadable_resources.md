@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: page
 title: Downloadable Resources
 permalink: /downloadable_resources
 order: 5
 ---
 
-### Meet The Outreach Team
+![Rocket Launch]({{ 'assets/img/coming_soon.png' | relative_url }})
 
-{% include team_style.html %}
-{% include team.html team="Outreach" %}
+## Coming Soon

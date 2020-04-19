@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: News and Updates
 permalink: /news_and_updates
 order: 7

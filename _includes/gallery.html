@@ -20,11 +20,12 @@
 }
 </style>
 
-{% assign image_files = site.static_files | where: "image", true %}
 <div class="gallery">
-    {% for image in image_files %}
-        <div class="image">
-            <img src="{{ image.path | relative_url }}" alt="{{ image.path }}" class="image" />
-        </div>
+    {% for image in site.static_files %}
+        {% if image.path contains 'assets/img/gallery' %}
+            <div class="image">
+                <img src="{{ image.path | relative_url }}" alt="{{ image.path }}" class="image" />
+            </div>
+        {% endif %}
     {% endfor %}
 </div>

@@ -5,7 +5,7 @@ category: rocket
 excerpt_separator: <!-- more -->
 ---
 
-The seconds rocket launch! Dual deployment etc.
+{% include redkitei_image.html %}
 
 <!-- more -->
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Rockets
 permalink: /rockets
 order: 3

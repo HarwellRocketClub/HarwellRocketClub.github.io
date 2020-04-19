@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Research and Development
 permalink: /research_and_development
 order: 6

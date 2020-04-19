@@ -40,18 +40,18 @@
 </style>
 
 {% for project in site.categories.research_and_development %}
+{% if project.patch %}
 <div class="postTopBar">
     <div class="postTitle">
         <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
     </div>
     <div class="postPatch">
-    {% if project.patch %}
         <img src="../assets/img/{{ project.patch }}" alt="{{ project.title }} mission patch" class="image" />
-    {% else %}
-        <img src="../assets/img/club_logo.png" alt="{{ project.title }} mission patch" class="image" />
-    {% endif %}
     </div> 
 </div>
+{% else %}
+<h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+{% endif %}
 <hr />
 <p>{{ project.excerpt }}</p>
 <div class="bottomOfPost">
