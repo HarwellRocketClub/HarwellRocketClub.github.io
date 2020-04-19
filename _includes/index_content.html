@@ -1,0 +1,108 @@
+<style>
+table, tr, td {
+    border: none;
+}
+.readMore {
+    background-color: #008CBA;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1px;
+    position: absolute;
+}
+
+@media all and (max-width:500px){
+    table{
+        width:100%;
+    }
+
+    td{
+        display:block;
+        width:100%;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+
+}
+</style>
+
+<h2>Red Kite</h2>
+
+<table>
+    <tr>
+        <td style="width: 30%; text-align: center;">
+            <img src="{{ 'assets/img/logo.png' | relative_url }}" alt="Red Kite Mission Patch"/>
+        </td>
+        <td>
+            <p>{{ site.red_kite_description }}</p>
+            <div style="text-align: center;">
+                <a href="{{ '/red_kite' | relative_url }}">
+                    <div class="readMore">
+                        Read more
+                    </div>
+                </a>
+            </div>
+        </td>
+    </tr>
+<table>
+
+<br />
+
+
+<h2>Rocket Workshops</h2>
+
+<table>
+    <tr>
+        <td style="width: 30%; text-align: center;">
+            <img src="{{ 'assets/img/workshops.webp' | relative_url }}" alt="Image of the workshop"/>
+        </td>
+        <td>
+            <p>
+                Our rocket workshops are targeted at KS3 (11-14 years old) students, following research funded by the Economic 
+                and Social Research Council (ESRC) in the ASPIRES project. Our workshops are typically hosted at local schools, and 
+                encourage KS3 and younger to design and build their own model rockets. HarwellRocketClub certified & licensed members 
+                will be on hand to guide students, and launch their rocket on A-D Impulse motors.
+            </p>
+            <div style="text-align: center;">
+                <a href="{{ '/rocket_workshops' | relative_url }}">
+                    <div class="readMore">
+                        Read more
+                    </div>
+                </a>
+            </div>
+        </td>
+    </tr>
+<table>
+
+<br />
+
+<h2>Downloadable Resources</h2>
+
+<table>
+    <tr>
+        <td style="width: 30%; text-align: center;">
+            <img src="{{ 'assets/img/pdf.webp' | relative_url }}" alt="Resource image"/>
+        </td>
+        <td>
+            <p>
+                HarwellRocketClub pulls on experience & expertise of its members and inspires to pass 
+                on this knowledge to anyone seeking to get involved with the amateur rocketry community. 
+                Outreach resources, technical documents, rocket build guidelines and much more will be 
+                generated into PDF documents, and made available to the public. We are open to requests, 
+                so please get in contact with any ideas you wish to see and download.   
+            </p>
+            <div style="text-align: center;">
+                <a href="{{ '/downloadable_resources' | relative_url }}">
+                    <div class="readMore">
+                        Read more
+                    </div>
+                </a>
+            </div>
+        </td>
+    </tr>
+<table>
+
+<br />

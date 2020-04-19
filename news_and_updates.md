@@ -7,4 +7,9 @@ order: 7
 
 See updates on our various projects, activities and events.
 
-{% include updates.html %}
+{% for post in site.categories.update %}
+## [{{ post.title }}]({{ post.url }})
+
+{{ post.excerpt }}
+{% endfor %}
+

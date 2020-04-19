@@ -35,6 +35,12 @@ plugins:
 
 default_team_image: assets/img/gallery/blackarrow3.jpg
 
+red_kite_description: >-
+  RedKite is a series of sounding rockets with the ambition to provide launch capabilities for student projects to approx. 1-3km altitude. 
+  The intention of RedKite is to inspire children, students and adult of all ages and backgrounds by providing a platform
+  where they are able to design, build and launch their own payloads. The name choice represents the rebirth of the UK rocketry 
+  industry following the near extinction of the RedKite bird, which resiliently bounced back. Red-kite's can also be found here at Harwell.
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
