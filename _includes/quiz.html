@@ -1,0 +1,139 @@
+<!-- Quiz credit to https://www.sitepoint.com/simple-javascript-quiz -->
+
+<style>
+.question {
+    margin: 10px;
+}
+#submitDiv {
+    margin: 10px;
+    text-align: center;
+}
+.answerMessage {
+    font-size: 30px;
+}
+</style>
+
+<div id="quiz"></div>
+<div id="submitDiv">
+<button id="submit">Submit Answers</button>
+</div>
+<div id="results"></div>
+
+<script>
+    
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    
+    const questions = [
+        {
+            question: "How many people have been to space?",
+            answers: {
+                a: "565",
+                b: "183",
+                c: "64"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "If the Earth was the size of a football how far away would the Moon be?",
+            answers: {
+                a: "12m",
+                b: "6m",
+                c: "1m"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "How many countries have launched an orbital rocket?",
+            answers: {
+                a: "4",
+                b: "11",
+                c: "21"
+            },
+            correctAnswer: "b"
+        }
+    ];
+    
+    function buildQuiz(){
+        // variable to store the HTML output
+        const output = [];
+    
+        // for each question...
+        questions.forEach((currentQuestion, questionNumber) => {
+    
+            // variable to store the list of possible answers
+            const answers = [];
+    
+            // and for each available answer...
+            for(letter in currentQuestion.answers){
+    
+                // ...add an HTML radio button
+                answers.push(
+                    `<label>
+                    <input type="radio" name="question${questionNumber}" value="${letter}">
+                    ${letter} :
+                    ${currentQuestion.answers[letter]}
+                    </label>
+                    <br />`
+                );
+                }
+    
+                // add this question and its answers to the output
+                output.push(
+                `<div class="question"> ${currentQuestion.question} </div>
+                <div class="answers"> ${answers.join('')} </div>`
+                );
+            }
+        );
+    
+        // finally combine our output list into one string of HTML and put it on the page
+        quizContainer.innerHTML = output.join('');
+    }
+    
+    function showResults(){
+    
+        // gather answer containers from our quiz
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+    
+        // keep track of user's answers
+        let numCorrect = 0;
+    
+        // for each question...
+        questions.forEach( (currentQuestion, questionNumber) => {
+    
+        // find selected answer
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    
+        // if answer is correct
+        if(userAnswer === currentQuestion.correctAnswer){
+            // add to the number of correct answers
+            numCorrect++;
+    
+            // color the answers green
+            answerContainers[questionNumber].style.color = 'green';
+            answerContainer.innerHTML = answerContainer.innerHTML + "<p class='answerMessage'>&#10004 Correct!</p>"
+        }
+        // if answer is wrong or blank
+        else{
+            // color the answers red
+            answerContainers[questionNumber].style.color = 'red';
+            answerContainer.innerHTML = answerContainer.innerHTML + '<p class=\"answerMessage\">&#10008 Unlucky, the correct answer was ' 
+                + currentQuestion.correctAnswer + ': ' + currentQuestion.answers[currentQuestion.correctAnswer] + '</p>'
+        }
+        });
+    
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
+    }
+    
+    buildQuiz();
+    
+    // Event listeners
+    submitButton.addEventListener('click', showResults);
+        
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
