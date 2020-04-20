@@ -33,7 +33,7 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
-default_team_image: assets/img/gallery/blackarrow3.jpg
+default_team_image: assets/img/blackarrow3.jpg
 
 red_kite_description: >-
   RedKite is a series of sounding rockets with the ambition to provide launch capabilities for student projects to approx. 1-3km altitude. 

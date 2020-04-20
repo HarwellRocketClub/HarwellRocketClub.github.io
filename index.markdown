@@ -17,6 +17,8 @@ Initially formed to explore and enjoy the amateur rocket community, the group’
 
 “To increase public awareness of the growing UK launch capabilities, build internal capacity at designing & building rocket technology, and inspire the incoming generation of scientists, engineers, mathematicians, journalists & more through our own R&D, sounding rocket development, and outreach strategy”.
 
+{% include youtube_playlist.html %}
+
 {% include index_content.html %}
 
 {% include gallery.html %}
