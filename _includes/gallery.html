@@ -1,31 +1,17 @@
 <style>
-.gallery {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center;
-}
-.image {
-    display: inline-block;
-    flex-basis: 30%;
-    margin: 5px;
-    text-align: center;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-    .image {
-        flex-basis: 80%;
+    .gallery {
+        margin: auto;
+        text-align: center;
     }
-}
+    .gallery * {
+        max-width: 100%;
+    }
 </style>
 
 <div class="gallery">
-    {% for image in site.static_files %}
-        {% if image.path contains 'assets/img/gallery' %}
-            <div class="image">
-                <img src="{{ image.path | relative_url }}" alt="{{ image.path }}" class="image" />
-            </div>
-        {% endif %}
-    {% endfor %}
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/188063235@N02/albums/72157713985151201" title="Website Gallery">
+        <img src="https://live.staticflickr.com/65535/49802681061_a859e66aee_z.jpg" alt="Website Gallery">
+    </a>
 </div>
+
+<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
