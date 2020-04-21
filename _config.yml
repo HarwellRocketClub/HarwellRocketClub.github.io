@@ -24,8 +24,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   UK based amateur rocket group striving to design, build and launch high power rockets.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: HarwellRockets
-#github_username:  jekyll
+media:
+  - site: GitHub
+    link: https://www.github.com/HarwellRocketClub
+    name: HarwellRocketClub
+    icon: assets/img/github_24x_24x.png
+  - site: Flickr
+    link: https://www.flickr.com/photos/188063235@N02/
+    name: HarwellRocketClub
+    icon: assets/img/flickr_24x_24x.png
+  - site: Twitter
+    link: https://twitter.com/HarwellRockets
+    name: HarwellRocketClub
+    icon: assets/img/twitter_24x_24x.png
+  - site: YouTube
+    link: www.youtube.com/channel/UCIzx-9Uy_lV__uc--MwWsCw
+    name: HarwellRocketClub
+    icon: assets/img/youtube_24x_24x.png
+
 logo: assets/img/club_logo.png
 google_analytics: UA-164126166-1
 

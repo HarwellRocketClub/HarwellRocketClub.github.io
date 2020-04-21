@@ -35,6 +35,7 @@
             {%- endfor -%}
         </div>
 
+
       </header>
       <section>
 
@@ -42,7 +43,21 @@
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a> adapted by <a href="https://github.com/JCKing97">JCKing97</a></small></p>
+        <div class="socialMediaLinks">
+          {%- for media_site in site.media -%}
+          <a href="{{ media_site.link }}" style="vertical-align: middle;">
+            <span style="vertical-align: middle; display: table-cell;">
+              <img src="{{ media_site.icon | relative_url }}" alt="{{ media_site.site }}" style="vertical-align: middle; display: table-cell;">
+            </span>
+            <span style="vertical-align: middle; display: table-cell; padding: 4px;">- {{ media_site.name }}</span>
+          </a><br />
+          {% endfor -%}
+        </div>
+        <p>
+          <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a> adapted by 
+            <a href="https://github.com/JCKing97">JCKing97</a>
+          </small>
+        </p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
