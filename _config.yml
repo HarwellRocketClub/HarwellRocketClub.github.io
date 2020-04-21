@@ -38,7 +38,7 @@ media:
     name: HarwellRockets
     icon: assets/img/twitter_24x_24x.png
   - site: YouTube
-    link: www.youtube.com/channel/UCIzx-9Uy_lV__uc--MwWsCw
+    link: https://www.youtube.com/channel/UCIzx-9Uy_lV__uc--MwWsCw
     name: HarwellRocketClub
     icon: assets/img/youtube_24x_24x.png
 
