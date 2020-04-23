@@ -47,7 +47,7 @@ media:
     icon: assets/img/atom_24x_24x.png
 
 logo: assets/img/club_logo.png
-google_analytics: UA-164126166-1
+# google_analytics: UA-164126166-1
 
 # Build settings
 theme: jekyll-theme-minimal
