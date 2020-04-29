@@ -5,7 +5,8 @@
     <div class="teamPhotosItem">
         <a href="{{ member.url | relative_url }}">
         {%- if member.image -%}
-            <img src="../team/assets/img/{{ member.image }}" alt="{{ member.title }}" class="image" />
+            {% capture member_image %}team/assets/img/{{ member.image }}{% endcapture %}
+            <img src="{{ member_image | relative_url }}" alt="{{ member.title }}" class="image" />
         {% else %}
             <img src="{{ site.default_team_image | relative_url }}" alt="{{ member.title }}" class="image" />
         {% endif %}
