@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about
-order: 10
+order: 11
 ---
 
 Hosted on GitHub Pages, built with Jekyll. Theme by [orderedlist](https://github.com/orderedlist), adapted by [JCKing97](https://github.com/JCKing97).
