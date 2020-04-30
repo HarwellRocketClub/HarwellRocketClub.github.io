@@ -5,7 +5,7 @@ permalink: /red_kite
 order: 2
 ---
 
-<img src="assets/img/logo.png" alt="Red Kite Mission Patch" style="width: 20%; margin-left: auto; margin-right: auto; display: block;"/>
+<img src="assets/img/logo.png" alt="Red Kite Mission Patch" style="width: 40%; margin-left: auto; margin-right: auto; display: block;"/>
 
 {{ site.red_kite_description }}
 
